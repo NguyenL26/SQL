@@ -1,0 +1,23 @@
+-- Create a clothing store database
+
+CREATE TABLE store (id INTEGER PRIMARY KEY, name TEXT, rack INTEGER, price INTEGER);
+
+INSERT INTO store VALUES (1, 'shirt', 3, 25);
+INSERT INTO store VALUES(2, 'pants', 2, 32);
+INSERT INTO store VALUES(3, 'tank top', 5, 10);
+INSERT INTO store VALUES (4, 'short sleeve', 3, 16);
+INSERT INTO store VALUES (5, 'long sleeve', 3, 28);
+INSERT INTO store VALUES (6, 'underwear', 1, 2);
+INSERT INTO store VALUES (7, 'jacket', 6, 45);
+INSERT INTO store VALUES (8, 'jeans', 2, 42);
+INSERT INTO store VALUES (9, 'vest', 6, 18);
+INSERT INTO store VALUES (10, 'scarf', 1, 12);
+INSERT INTO store VALUES (11, 'beanie', 1, 8);
+INSERT INTO store VALUES (12, 'shoes', 7, 53);
+INSERT INTO store VALUES (13, 'socks', 1, 5);
+INSERT INTO store VALUES (14, 'gloves', 1, 6);
+INSERT INTO store VALUES (15, 'sweater', 3, 36);
+
+--display the database ordered by price.
+SELECT * FROM store ORDER BY price;
+SELECT * FROM store WHERE price > 10;
